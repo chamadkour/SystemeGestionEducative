@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Enseignant {
     String nom, prenom, email, grade;
-    Departement departement = new Departement();
+    Departement departement;
     int id;
     ArrayList<Module> module=new ArrayList<Module>();
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Departement {
     String intitule;
-    Enseignant responsable = new Enseignant();
+    Enseignant responsable;
     int id;
     ArrayList<Filiere> filiere= new ArrayList<Filiere>();
 
