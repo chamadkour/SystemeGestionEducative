@@ -6,6 +6,7 @@ public class Etudiant {
     String nom,prenom,email;
     int apogee;
     Filiere filiere;
+    int id;
     ArrayList<Note> note=new ArrayList<Note>();
 
     public Etudiant(){
@@ -56,5 +57,12 @@ public class Etudiant {
     }
     public void setNote(ArrayList<Note> note){
         this.note=note;
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

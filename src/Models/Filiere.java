@@ -6,6 +6,7 @@ public class Filiere {
     String intitule;
     Enseignant responsable=new Enseignant();
     Departement departement=new Departement();
+    int id;
 
     ArrayList<Module> module=new ArrayList<Module>();
 
@@ -39,5 +40,12 @@ public class Filiere {
     }
     public void setModule(ArrayList<Module> module){
         this.module=module;
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

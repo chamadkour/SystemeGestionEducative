@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Departement {
     String intitule;
     Enseignant responsable = new Enseignant();
+    int id;
     ArrayList<Filiere> filiere= new ArrayList<Filiere>();
 
     public Departement(){
@@ -31,6 +32,13 @@ public class Departement {
     }
     public void setFiliere(ArrayList<Filiere> filiere){
         this.filiere=filiere;
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
 }

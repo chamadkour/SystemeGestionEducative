@@ -2,8 +2,9 @@ package Models;
 
 public class Module {
     String intitule;
-    Filiere filiere=new Filiere();
-    Enseignant professeur=new Enseignant();
+    Filiere filiere;
+    Enseignant professeur;
+    int id;
 
     public Module(){
     }
@@ -28,5 +29,13 @@ public class Module {
 
     public void setProfesseur(Enseignant professeur) {
         this.professeur = professeur;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

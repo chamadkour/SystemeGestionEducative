@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Enseignant {
     String nom, prenom, email, grade;
     Departement departement = new Departement();
+    int id;
     ArrayList<Module> module=new ArrayList<Module>();
 
     public Enseignant(){
@@ -51,5 +52,12 @@ public class Enseignant {
     }
     public void setModule(ArrayList<Module> module) {
         this.module = module;
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
