@@ -21,7 +21,7 @@ public class FiliereServices {
         return  new Filiere();
     }
 
-    public static Filiere updateFiliere(int id , String intitule, Enseignant responsable, Departement departement){
+    public static Filiere updateFiliere(int id , String intitule, Enseignant ...responsable, Departement ...departement){
         for (Filiere filiere : DataBase.filiere) {
             if (filiere.getId() == id) {
                 filiere.setIntitule(intitule);
