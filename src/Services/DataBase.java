@@ -1,7 +1,7 @@
 package Services;
 import Models.*;
-import Models.Module;
 
+import java.lang.Module;
 import java.util.ArrayList;
 
 public class DataBase {
@@ -14,7 +14,7 @@ public class DataBase {
     public static ArrayList<Departement> departement = new ArrayList<Departement>();
     public static ArrayList<Enseignant> enseignant = new ArrayList<Enseignant>();
     public static ArrayList<Filiere> filiere = new ArrayList<Filiere>();
-    public static ArrayList<Module> module = new ArrayList<Module>();
+    public static ArrayList<java.lang.Module> module = new ArrayList<Module>();
     public static ArrayList<Etudiant> etudiant = new ArrayList<Etudiant>();
     public static ArrayList<Note> note = new ArrayList<Note>();
 

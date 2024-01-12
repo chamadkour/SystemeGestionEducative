@@ -6,9 +6,9 @@ import Models.Departement;
 import java.util.ArrayList;
 
 public class FiliereServices {
-    public static Filiere addFiliere(String intitule, Enseignant ...responsable, Departement ...departement) {
+    public static Filiere addFiliere(String intitule, Enseignant responsable, Departement departement) {
         Filiere filiere=new Filiere();
-        filiere.setIntitule();
+        filiere.setIntitule(intitule);
         filiere.setId(DataBase.getFiliere_id());
         if (responsable.length > 0){
             Filiere.setResponsable(responsable[0]);
@@ -21,10 +21,10 @@ public class FiliereServices {
         return  new Filiere();
     }
 
-    public static Filiere updateFiliere(int id , String intitule, Enseignant ...responsable, Departement ...departement){
+    public static Filiere updateFiliere(int id , String intitule, Enseignant responsable, Departement departement){
         for (Filiere filiere : DataBase.filiere) {
             if (filiere.getId() == id) {
-                filiere.setIntitule();
+                filiere.setIntitule(intitule);
                 if (responsable.length> 0){
                     filiere.setResponsable(responsable[0]);
                 }

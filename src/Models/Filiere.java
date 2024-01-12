@@ -20,7 +20,7 @@ public class Filiere {
     public String getIntitule(){
         return intitule;
     }
-    public void setIntitule(){
+    public void setIntitule(String intitule){
         this.intitule=intitule;
     }
     public Enseignant getResponsable(){
