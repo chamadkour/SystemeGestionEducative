@@ -52,7 +52,7 @@ public class FiliereController {
         int idResp = Main.getIntInput("Sélectionnez le responsable par id :");
         DepartementController.displayDepartements();
         int idDept = Main.getIntInput("Séléctionnez le département ");
-        FiliereServices.addFiliere(intitule, EnseignantServices.getEnseignantById(idResp), DepartmentServices.getDepartmentById(idDept));
+        FiliereServices.addFiliere(intitule, DepartmentServices.getDepartmentById(idDept));
         showFiliere();
 
         showMenu();
@@ -65,7 +65,7 @@ public class FiliereController {
         int idResp = Main.getIntInput("Selectionnez un enseignant : ");
         DepartementController.displayDepartements();
         int idDept = Main.getIntInput("Selectionnez un département : ");
-        FiliereServices.updateFiliere(id, intitule, EnseignantServices.getEnseignantById(idResp), DepartmentServices.getDepartmentById(idDept));
+        FiliereServices.updateFiliere(id, intitule, DepartmentServices.getDepartmentById(idDept));
         showFiliere();
         showMenu();
     }

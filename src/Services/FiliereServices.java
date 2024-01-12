@@ -6,14 +6,11 @@ import Models.Departement;
 import java.util.ArrayList;
 
 public class FiliereServices {
-    public static Filiere addFiliere(String intitule, Enseignant responsable, Departement departement) {
+    public static Filiere addFiliere(String intitule, Departement ... departement) {
         Filiere filiere=new Filiere();
         filiere.setIntitule(intitule);
         filiere.setId(DataBase.getFiliere_id());
-        if (responsable.length > 0){
-            Filiere.setResponsable(responsable[0]);
-        }
-        DataBase.enseignant.add(responsable);
+
         if (departement.length > 0){
             Enseignant.setDepartement(departement[0]);
         }
@@ -21,14 +18,10 @@ public class FiliereServices {
         return  new Filiere();
     }
 
-    public static Filiere updateFiliere(int id , String intitule, Enseignant ...responsable, Departement ...departement){
+    public static Filiere updateFiliere(int id , String intitule,  Departement ...departement){
         for (Filiere filiere : DataBase.filiere) {
             if (filiere.getId() == id) {
                 filiere.setIntitule(intitule);
-                if (responsable.length> 0){
-                    filiere.setResponsable(responsable[0]);
-                }
-                return responsable;
                 if (departement.length> 0){
                     filiere.setDepartement(departement[0]);
                 }

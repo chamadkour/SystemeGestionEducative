@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a220cbd-c9d4-436c-93c0-4ae5876a062f" name="Changes" comment="First edit">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6a220cbd-c9d4-436c-93c0-4ae5876a062f" name="Changes" comment="Controllers and connection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SystemeGestionEducative.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SystemeGestionEducative.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Filiere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Filiere.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connection/JDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connection/JDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/FiliereController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/FiliereController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/ModuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ModuleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Departement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Departement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Module.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/EtudiantServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/EtudiantServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/FiliereServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/FiliereServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/ModuleServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ModuleServices.java" afterDir="false" />
     </list>
@@ -40,26 +41,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Chama/Downloads/mysql-connector-j-8.2.0/mysql-connector-j-8.2.0/mysql-connector-j-8.2.0.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "21",
+    "last_opened_file_path": "C:/Users/Chama/Downloads/mysql-connector-j-8.2.0/mysql-connector-j-8.2.0/mysql-connector-j-8.2.0.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="JDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBC" />
+      <module name="SystemeGestionEducative" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JDBC" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,7 +94,8 @@
       <workItem from="1704537104333" duration="6215000" />
       <workItem from="1705001145673" duration="3880000" />
       <workItem from="1705005160092" duration="37000" />
-      <workItem from="1705005215755" duration="11884000" />
+      <workItem from="1705005215755" duration="12260000" />
+      <workItem from="1705053126329" duration="5499000" />
     </task>
     <task id="LOCAL-00001" summary="First edit">
       <option name="closed" value="true" />
@@ -92,7 +113,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703161886670</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First edit">
+      <option name="closed" value="true" />
+      <created>1705045883533</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705045883533</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Controllers and connection">
+      <option name="closed" value="true" />
+      <created>1705045954976</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705045954976</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +137,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First edit" />
+    <MESSAGE value="Controllers and connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Controllers and connection" />
   </component>
 </project>

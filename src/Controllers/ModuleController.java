@@ -34,14 +34,13 @@ public class ModuleController {
 
     }
     public static void showModule(){
-        for (Module module : DataBase.module) {
+        for ( Module module : DataBase.module) {
             System.out.print("Id : " + module.getId());
             System.out.print(" | Intitulé : " + module.getIntitule());
-            System.out.print(" | Filière : " + module.getFiliere() );
-            System.out.print(" | Professeur : " + module.getProfesseur() );
-
-            System.out.println("");
+            System.out.print(" | Filière : " + module.getFiliere());
+            System.out.print(" | Professeur : " + module.getProfesseur());
         }
+            System.out.println("");
     }
     public static void createModule(){
         int id = Main.getIntInput("Entrez id du module :");
@@ -66,7 +65,7 @@ public class ModuleController {
         FiliereController.showFiliere();
         int idFil = Main.getIntInput("Entrez l'id de la filière :");
 
-        ModuleServices.updateModule(id, intitule, EnseignantServices.getEnseignantById(idEns), FiliereServices.getFiliereById(idFil));
+        ModuleServices.updateModule(id, intitule, FiliereServices.getFiliereById(idFil) , EnseignantServices.getEnseignantById(idEns));
         showModule();
         showMenu();
     }

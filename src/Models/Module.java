@@ -8,6 +8,12 @@ public class Module {
 
     public Module(){
     }
+    public Module (int id, String intitule, Filiere filiere, Enseignant professeur) {
+        this.id=id;
+        this.intitule=intitule;
+        this.filiere=filiere;
+        this.professeur=professeur;
+    }
     public String getIntitule(){
         return intitule;
     }
